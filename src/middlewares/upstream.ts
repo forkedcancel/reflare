@@ -9,6 +9,9 @@ export const cloneRequest = (
     body: request.body,
     method: request.method,
     headers: request.headers,
+    redirect: request.redirect,
+    fetcher: request.fetcher,
+    signal: request.signal,
   };
   return new Request(url, requestInit);
 };
